@@ -1,0 +1,23 @@
+
+{% extends 'base2.html' %}
+{% load static %}
+{% block body %}
+<center>
+<h1 >Welcome,{{user.first_name}}</h1></center>
+
+
+
+  <a class="nav-link" href="{% url 'stockpage' %}">StockPage</a><br>
+
+
+  <a class="nav-link" href="{% url 'cryptopage' %}">CryptoPage</a><br>
+
+
+  <a class="nav-link" href="{% url 'fdpage' %}">FdPage</a><br>
+
+
+
+
+
+
+{% endblock %}
